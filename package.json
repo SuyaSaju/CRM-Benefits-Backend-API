@@ -29,7 +29,7 @@
     "modclean": "modclean --run && npm run npx-tailor",
     "npx-tailor": "npx dt-oneagent-tailor --AwsLambdaV8",
     "precommit": "npm run lint",
-    "start": "node index.local.js --name enterprise-base-api --abort-on-uncaught-exception",
+    "start" : "NODE_ENV=LOCAL PORT=3000 SWAGGER_BASE_PATH=/v1 node --no-lazy -r ts-node/register src/index.ts",
     "test": "jest"
   },
   "dependencies": {
