@@ -1,6 +1,6 @@
 {
-  "name": "node-starter-api",
-  "description": "Starter project for greenfield Api development",
+  "name": "wellmark-benefits-api",
+  "description": "Benefits API for wellmark",
   "version": "1.0.0",
   "private": true,
   "keywords": [
@@ -29,7 +29,7 @@
     "modclean": "modclean --run && npm run npx-tailor",
     "npx-tailor": "npx dt-oneagent-tailor --AwsLambdaV8",
     "precommit": "npm run lint",
-    "start" : "NODE_ENV=LOCAL PORT=3000 SWAGGER_BASE_PATH=/v1 node --no-lazy -r ts-node/register src/index.ts",
+    "start": "NODE_ENV=LOCAL PORT=3000 SWAGGER_BASE_PATH=/v1 node --no-lazy -r ts-node/register src/index.ts",
     "test": "jest"
   },
   "dependencies": {

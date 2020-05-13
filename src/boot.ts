@@ -160,7 +160,7 @@ export const isHealthCheck = (event: any) => {
 
 export const bootLocalEnv = (): void => {
   try {
-    const swaggerDoc = '/node-starter-api/v1';
+    const swaggerDoc = process.env.SWAGGER_BASE_PATH;
     console.log(`Your server is listening on port ${port} (http://${os.hostname()}:${port})`);
     console.log(`Swagger-ui is available on http://${os.hostname()}:${port}${swaggerDoc}/docs`);
     open(`http://${os.hostname()}:${port}${swaggerDoc}/docs`, { app: 'chrome' });
